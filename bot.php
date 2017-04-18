@@ -53,16 +53,16 @@ if($arrJson['events'][0]['message']['text'] == "สวัสดี"){
   $arrPostData['messages'][0]['type'] = "text";
   $arrPostData['messages'][0]['text'] = "ครับเจ้านาย  มีอะไรให้ช่วยครับ";
 
-}else if( strpos($strWord,"หวย") !== false ){	//&& (strpos($strWord,"หน่อย") !== false || strpos($strWord,"ได้ไหม") !== false || strpos($strWord,"ได้มั้ย") !== false)){
+}else if( strpos($strWord,"btc") !== false ){	//&& (strpos($strWord,"หน่อย") !== false || strpos($strWord,"ได้ไหม") !== false || strpos($strWord,"ได้มั้ย") !== false)){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "ตอนนี้ลูกพี่ขี้เกียจอยู่  ยังไม่อยากทำครับ  รอผมอัพเดทเวอร์ชั่นหน้าน๊าาาาา....";
+  $arrPostData['messages'][0]['text'] = "มึงยังทำกูไม่เสร็จสัสอย่าเมา";
 }else{
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "ฉันไม่เข้าใจคำสั่ง v.004";
+  $arrPostData['messages'][0]['text'] = "ฉันไม่เข้าใจคำสั่ง";
 }
  
  
