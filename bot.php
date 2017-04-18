@@ -52,6 +52,12 @@ if($arrJson['events'][0]['message']['text'] == "สวัสดี"){
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
   $arrPostData['messages'][0]['text'] = "ครับเจ้านาย  มีอะไรให้ช่วยครับ";
+	
+}else if($strWord == "สถานะ" || $strWord == "run"){
+  $arrPostData = array();
+  $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
+  $arrPostData['messages'][0]['type'] = "text";
+  $arrPostData['messages'][0]['text'] = "ปกติดีรับเจ้านาย  มีอะไรให้ช่วยครับ";
 
 }else if( strpos($strWord,"btc") !== false ){	//&& (strpos($strWord,"หน่อย") !== false || strpos($strWord,"ได้ไหม") !== false || strpos($strWord,"ได้มั้ย") !== false)){
   $arrPostData = array();
