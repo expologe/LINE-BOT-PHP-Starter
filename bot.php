@@ -24,7 +24,7 @@ if($arrJson['events'][0]['message']['text'] == "สวัสดี"){
   $arrPostData['messages'][0]['text'] = "ฉันยังไม่มีชื่อนะ";
   
   
-  $data = file_get_contents("https://www.nicehash.com/api?method=stats.provider.ex&addr=1CGpMeXVJM2prxC1qgoVkBuXiiNSgxbBPW");
+  $data = file_get_contents("https://www.nicehash.com/api?method=stats.provider.ex&addr=32ZStQDcivsC36eH2eCFrG5sEGkSkqcZsy");
   $obj = json_decode($data,true);
 
   $arrPostData['messages'][0]['text'] = $obj['result']['current'][3]['name'];
